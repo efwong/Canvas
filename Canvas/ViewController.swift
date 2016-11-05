@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var trayOriginalCenter: CGPoint!
     var trayCenterWhenOpen: CGPoint!
     var trayCenterWhenClosed: CGPoint!
+    var newlyCreatedFace: UIImageView!
+    var newlyCreatedFaceOriginalPos: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,30 @@ class ViewController: UIViewController {
             //trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayOriginalCenter.y + translation.y)
         } else if panGestureRecognizer.state == .ended {
             print("Gesture ended at: \(point)")
+        }
+    }
+    
+    
+    
+    @IBAction func onSmileyDrag(_ panGestureRecognizer: UIPanGestureRecognizer) {
+        let imageView = panGestureRecognizer.view as! UIImageView
+        let translation = panGestureRecognizer.translation(in: self.view)
+        
+        if panGestureRecognizer.state == .began {
+            // Create a new image view that has the same image as the one currently panning
+            newlyCreatedFace = UIImageView(image: imageView.image)
+            // Add the new face to the tray's parent view.
+            view.addSubview(newlyCreatedFace)
+            
+            // Initialize the position of the new face.
+            newlyCreatedFace.center = imageView.center
+            newlyCreatedFace.center.y += trayView.frame.origin.y
+            //let point = panGestureRecognizer.location(in: trayView)
+            newlyCreatedFaceOriginalPos = newlyCreatedFace.center
+        } else if panGestureRecognizer.state == .changed {
+            newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalPos.x + translation.x, y: newlyCreatedFaceOriginalPos.y + translation.y)
+        } else if panGestureRecognizer.state == .ended {
+            //print("Gesture ended at: \(point)")
         }
     }
 

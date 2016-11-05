@@ -20,44 +20,68 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esk-ZG-Vtn">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-aF-Shv">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-aF-Shv">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="DAW-yd-hbu"/>
                                             <constraint firstAttribute="width" constant="60" id="fKF-Zx-hut"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xch-Bf-w0T" appends="YES" id="BZz-2P-AnH"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" translatesAutoresizingMaskIntoConstraints="NO" id="PbL-hK-xzr">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" translatesAutoresizingMaskIntoConstraints="NO" id="PbL-hK-xzr">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="eTr-MC-99F"/>
                                             <constraint firstAttribute="height" constant="60" id="qer-9n-hCJ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="f9Z-7j-AzD" appends="YES" id="scd-23-y7d"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excited" translatesAutoresizingMaskIntoConstraints="NO" id="7HZ-jK-OH9">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excited" translatesAutoresizingMaskIntoConstraints="NO" id="7HZ-jK-OH9">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="7Y4-Nb-qKU"/>
                                             <constraint firstAttribute="height" constant="60" id="DPx-4j-8s7"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hbf-Lq-gnZ" appends="YES" id="rOy-KT-jqe"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-IX-AOp">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-IX-AOp">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="XFE-WN-TL0"/>
                                             <constraint firstAttribute="height" constant="60" id="aOs-gl-DaJ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="kLL-W0-sOB" appends="YES" id="3hV-Dg-sf9"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="tZX-Mz-9Le">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="tZX-Mz-9Le">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="eJU-Xw-VW6"/>
                                             <constraint firstAttribute="width" constant="60" id="hLX-A2-8hU"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="L49-Du-Cbc" appends="YES" id="P33-kc-Q1c"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-EU-dPI">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-EU-dPI">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="7lO-Rr-gtK"/>
                                             <constraint firstAttribute="height" constant="60" id="Bel-RJ-1Xv"/>
                                             <constraint firstAttribute="width" constant="60" id="JYZ-It-FAw"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="f7a-0s-EUA" appends="YES" id="Qbt-wp-TSx"/>
+                                        </connections>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downarrow" translatesAutoresizingMaskIntoConstraints="NO" id="dK9-Z9-CA7">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downarrow" translatesAutoresizingMaskIntoConstraints="NO" id="dK9-Z9-CA7">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="15" id="BMu-H4-Boc"/>
                                             <constraint firstAttribute="height" constant="15" id="apT-fd-Lay"/>
@@ -103,6 +127,36 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="ZWO-5g-AV0">
                     <connections>
                         <action selector="onTrayPanGesture:" destination="BYZ-38-t0r" id="GYD-rH-Or9"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xch-Bf-w0T">
+                    <connections>
+                        <action selector="onSmileyDrag:" destination="BYZ-38-t0r" id="On3-87-iIJ"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f9Z-7j-AzD">
+                    <connections>
+                        <action selector="onSmileyDrag:" destination="BYZ-38-t0r" id="4pl-NN-7Wb"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hbf-Lq-gnZ">
+                    <connections>
+                        <action selector="onSmileyDrag:" destination="BYZ-38-t0r" id="a1h-KB-PIX"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="kLL-W0-sOB">
+                    <connections>
+                        <action selector="onSmileyDrag:" destination="BYZ-38-t0r" id="nkM-Ix-ZXw"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="L49-Du-Cbc">
+                    <connections>
+                        <action selector="onSmileyDrag:" destination="BYZ-38-t0r" id="Q9K-SI-wAz"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f7a-0s-EUA">
+                    <connections>
+                        <action selector="onSmileyDrag:" destination="BYZ-38-t0r" id="goP-AG-doh"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
